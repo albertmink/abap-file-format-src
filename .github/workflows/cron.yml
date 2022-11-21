@@ -11,8 +11,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - uses: actions/checkout@v3
     - name: clone and mv files
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v3
     - name: runs
       run: |
         npm install
