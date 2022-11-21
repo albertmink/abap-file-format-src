@@ -1,2 +1,2 @@
 # abap-file-format-src
-The ABAP types behind ABAP file formats
+This repository contains the ABAP types behind ABAP file formats
