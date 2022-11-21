@@ -15,6 +15,7 @@ jobs:
       shell: bash
       run: |
         git clone https://github.com/SAP/abap-file-formats
+        pwd
         cp abap-file-formats/file-formats/zif_* src/
         cp abap-file-formats/file-formats/*/type/zif_* src/
         rm -rf abap-file-formats/
