@@ -12,8 +12,12 @@ jobs:
 
     steps:
     - name: clone and mv files
-      shell: bash
-      run: ./.github/script.sh
+      uses: action/setup-node@v2
+    - name: runs
+      run: |
+        npm install
+        npm run test
+        git status
     - name: Open PR
       uses: peter-evans/create-pull-request@v4
       with:
