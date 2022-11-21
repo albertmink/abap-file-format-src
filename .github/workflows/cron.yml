@@ -12,7 +12,6 @@ jobs:
 
     steps:
     - name: clone and mv files
-      uses: actions/checkout@v2
       shell: bash
       run: |
         git clone https://github.com/SAP/abap-file-formats $(GITHUB_WORKSPACE)/tmp/
