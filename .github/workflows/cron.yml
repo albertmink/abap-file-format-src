@@ -16,9 +16,9 @@ jobs:
       run: |
         git clone https://github.com/SAP/abap-file-formats $(GITHUB_WORKSPACE)
         cd ${GITHUB_WORKSPACE}
-        cp tmp/file-formats/zif_* src/
-        cp tmp/file-formats/*/type/zif_* src/
-        rm -rf tmp/
+        cp abap-file-formats/file-formats/zif_* src/
+        cp abap-file-formats/file-formats/*/type/zif_* src/
+        rm -rf abap-file-formats/
     - name: Open PR
       uses: peter-evans/create-pull-request@v4
       with:
