@@ -14,7 +14,7 @@ jobs:
     - name: clone and mv files
       shell: bash
       run: |
-        git clone https://github.com/SAP/abap-file-formats $(GITHUB_WORKSPACE)/tmp/
+        git clone https://github.com/SAP/abap-file-formats $(GITHUB_WORKSPACE)
         cd ${GITHUB_WORKSPACE}
         cp tmp/file-formats/zif_* src/
         cp tmp/file-formats/*/type/zif_* src/
