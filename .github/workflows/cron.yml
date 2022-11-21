@@ -13,7 +13,7 @@ jobs:
     steps:
     - name: clone and mv files
       shell: bash
-      run: ./script.sh
+      run: ${GITHUB_WORKSPACE}/script.sh
     - name: Open PR
       uses: peter-evans/create-pull-request@v4
       with:
