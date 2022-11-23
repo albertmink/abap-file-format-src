@@ -1,6 +1,6 @@
-# abap-file-format-src
-This repository contains the ABAP types behind ABAP file formats, no documentation.
+# ABAP-file-format-src
+This repository contains the ABAP sources behind the [ABAP file formats](https://github.com/SAP/abap-file-formats).
 
-The format of the interfaces itself is ABAP file format (JSON-based) and not the legacy abapGit format (XML-based).
-So, for pulling the files with abapGit, you might enable the Experimental Features.
+You can pull the repository via abapGit.
+You might enabled the experimental features, since the ABAP sources itself are provided as ABAP file format (JSON-based) and not the legacy abapGit format (XML-based).
 
